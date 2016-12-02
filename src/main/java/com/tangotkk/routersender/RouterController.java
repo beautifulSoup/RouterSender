@@ -16,8 +16,9 @@ public class RouterController {
 
     static {
         routerMaps.put("main:one", "dynamic://three");
-        routerMaps.put("main:two", "dynamic://two");
+        routerMaps.put("main:two", "dynamicWeb://two");
         routerMaps.put("two:one", "http://www.baidu.com");
+        routerMaps.put("three:one", "dynamic://four");
     }
 
     @RequestMapping("/router")
